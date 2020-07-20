@@ -22,7 +22,7 @@ const gradeCheck = (grade) => {
 
     }
 
-}
+} 
 
 const roundGrade = (grade) => {
 

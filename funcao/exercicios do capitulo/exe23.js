@@ -1,4 +1,4 @@
-function calcularNotaFinal(codAluno, nota1, nota2, nota3){
+const calcularNotaFinal = (codAluno, nota1, nota2, nota3) => {
     let notas = []
     notas.push(nota1)
     notas.push(nota2)

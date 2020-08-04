@@ -6,7 +6,6 @@ function sacarDinheiro(valorSaque) {
     let contador1 = 0;
     let valorNota = calcularValorNota(valorSaque);
     while (valorSaque >= valorNota) {
-        console.log(valorNota);
         switch (valorNota) {
             case 100:
                 valorSaque -= 100;

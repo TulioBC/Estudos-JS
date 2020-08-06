@@ -1,33 +1,33 @@
 const calculateHeight = (height1, tax1, height2, tax2) => {
-    let heighestChildren;
-    let smallestChindren;
-    let heighestTax;
+    let highestChildren;
+    let smallestChildren;
+    let highestTax;
     let smallestTax;
     if (height1 != height2) {
         if (height1 < height2) {
-            heighestChildren = height2;
-            heighestTax = tax2;
-            smallestChindren = height1;
+            highestChildren = height2;
+            highestTax = tax2;
+            smallestChildren = height1;
             smallestTax = tax1;
         } else {
-            heighestChildren = height1;
-            heighestTax = tax1;
-            smallestChindren = height2;
+            highestChildren = height1;
+            highestTax = tax1;
+            smallestChildren = height2;
             smallestTax = tax2;
         }
-        if (heighestTax > smallestTax) {
+        if (highestTax > smallestTax) {
             console.log(
-                'The smallest children will never pass the heighest children'
+                'The smallest children will never pass the highest children'
             );
         } else {
             let index = 0;
-            while (smallestChindren < heighestChildren) {
+            while (smallestChildren < highestChildren) {
                 index++;
-                smallestChindren += smallestTax;
-                heighestChildren += heighestTax;
+                smallestChildren += smallestTax;
+                highestChildren += highestTax;
             }
             console.log(
-                `Took ${index} years to the smallest children surpass the heighest one`
+                `Took ${index} years to the smallest children surpass the highest one`
             );
         }
     } else {
